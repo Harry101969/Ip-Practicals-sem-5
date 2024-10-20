@@ -1,6 +1,29 @@
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
-function App() {
+function Home() {
+  return (
+    <div>
+      <h1>Home Page</h1>
+    </div>
+  );
+}
+function About() {
+  return (
+    <div>
+      <h1>About Page</h1>
+    </div>
+  );
+}
+function Contact() {
+  return (
+    <div>
+      <h1>Contact Page</h1>
+    </div>
+  );
+}
+
+const App = () => {
   return (
     <Router>
       <div>
@@ -17,25 +40,14 @@ function App() {
             </li>
           </ul>
         </nav>
-        <Switch>
-          <Route path="/" Component={Home} />
-          <Route path="/about" Component={About} />
-          <Route path="/contact" Component={Contact} />
-        </Switch>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
       </div>
     </Router>
   );
-}
+};
 
 export default App;
-
-function Home() {
-  return <div>Home Component!</div>;
-}
-
-function About() {
-  return <div>Home Component!</div>;
-}
-function Contact() {
-  return <div>Contact Component!</div>;
-}
