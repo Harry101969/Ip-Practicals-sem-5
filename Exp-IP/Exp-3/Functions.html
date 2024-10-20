@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Simple function :
+      var add = () => {
+        console.log(`1.Simple Arrow function without return `);
+      };
+      add(10, 20);
+      const t = function () {
+        console.log("2.Simple annoymous function without return");
+      };
+      t();
+      function w() {
+        console.log("3.simple normal function without return");
+      }
+      w();
+      // Simple function with return
+      var add = () => {
+        return "4.simple arrow function with return";
+      };
+      console.log(add());
+      let a = function () {
+        return "5.simple annoymous function with return";
+      };
+      console.log(a());
+      function n() {
+        return "6.simple annoymous function with return";
+      }
+      console.log(n()); // parameter function without return:
+      var add = (p, q) => {
+        console.log(`7. Arrow function with parameter: ${p + q}`);
+      };
+      add(10, 20);
+      let f = function (a, b) {
+        console.log(`8.annoymous function with parameters: ${a + b}`);
+      };
+      f(2, 3);
+      function g(a, b) {
+        console.log(`9.normal function with parameters: ${a + b}`);
+      }
+      g(5, 6);
+      // parameter function with return:
+      var add = (p, q) => {
+        return `10. parameter arrow function with return: ${p + q}`;
+      };
+      console.log(add(2, 3));
+    </script>
+  </body>
+</html>

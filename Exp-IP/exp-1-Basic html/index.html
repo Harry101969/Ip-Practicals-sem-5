@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <body>
+      <script>
+        ////////////////////////////////////SIMPLE     FUNCTION////////////////////////////////////////////
+
+        function test1() {
+          return "1";
+        }
+        console.log(test1());
+
+        function test2() {
+          console.log("2");
+        }
+        test2();
+
+        function test3(x, y = 1) {
+          return x + y;
+        }
+        console.log(test3(2));
+
+        function test4(x, y = 2) {
+          console.log(x + y);
+        }
+        test4(2);
+
+        //////////////////////////////////////ANONYMOUS   FUNCTION/////////////////////////////////////
+
+        test5 = function () {
+          return "5";
+        };
+        console.log(test5());
+
+        test6 = function () {
+          console.log("6");
+        };
+        test6();
+
+        test7 = function (x, y = 3) {
+          console.log(x + y);
+        };
+        test7(4);
+
+        test8 = function (x, y = 4) {
+          console.log(x + y);
+        };
+        test8(4);
+
+        ///////////////////////////////////ARROW FUNCTION///////////////////////////////////////////////////////////////////////
+
+        test9 = () => {
+          return "9";
+        };
+        console.log(test9());
+
+        test10 = () => {
+          console.log("10");
+        };
+        test10();
+
+        test11 = (x, y = 10) => {
+          console.log(x + y);
+        };
+        test11(1);
+
+        test12 = (x, y = 10) => {
+          return "x + y";
+        };
+        test11(2);
+      </script>
+    </body>
+  </head>
+</html>

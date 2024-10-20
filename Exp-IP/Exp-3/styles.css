@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 96vh;
+  background-color: #f0f0f0;
+}
+
+.container {
+  width: 700px;
+  height: 700px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-right: 50px;
+}
+
+.header {
+  width: 100%;
+  height: 120px;
+  background-color: #0073e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #333;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-list li {
+  position: relative;
+}
+
+.nav-list a {
+  display: block;
+  padding: 15px;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.nav-list a:hover {
+  background-color: #555;
+}
+
+.dropdown-content,
+.submenu-content,
+.students-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: #333;
+  min-width: 153px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content li,
+.submenu-content li,
+.students-content li {
+  list-style: none;
+}
+
+.dropdown-content a,
+.submenu-content a,
+.students-content a {
+  padding: 10px 15px;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover,
+.submenu-content a:hover,
+.students-content a:hover {
+  background-color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-submenu:hover .submenu-content {
+  display: block;
+  top: 0;
+  left: 100%;
+}
+
+.submenu-content li:hover .students-content {
+  display: block;
+  top: 0;
+  color: #fff;
+  left: 100%;
+}
+
+.students-content li {
+  padding: 13px 15px;
+}
+.lf {
+  display: flex;
+}
+.left {
+  width: 400px;
+  height: 300px;
+  background-color: rgb(53, 53, 177);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right {
+  width: 400px;
+  height: 300px;
+  background-color: cornflowerblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Footer {
+  width: 700px;
+  height: 230px;
+  background-color: #0073e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

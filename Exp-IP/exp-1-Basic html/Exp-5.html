@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <body>
+      <script>
+        //5-A
+        class allstudent {
+          constructor(name, age, year) {
+            this.name = name;
+            this.age = age;
+            this.year = year;
+          }
+          placement() {
+            console.log(
+              `I am ${this.name} age ${this.age} and the year is ${this.year}`
+            );
+          }
+        }
+
+        class beststudent extends allstudent {
+          constructor(name, age, year, per) {
+            super(name, age, year);
+            this.per = per;
+          }
+          criteria() {
+            super.placement("Harsh Agarwal", 20, 2024);
+            if (this.per > 60) {
+              console.log(
+                `Hi ${this.name} is eligible for placement,because ${this.per} is greater than the selection criteria`
+              );
+            } else {
+              console.log(
+                `Hi ${this.sname} is  not eligible for placement,because ${this.per} is less than the selection criteria`
+              );
+            }
+          }
+        }
+        var test = new beststudent("Harsh Agarwal", 20, 2024, 90);
+        test.criteria();
+      </script>
+    </body>
+  </head>
+</html>
